@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flight-email-template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+ <style type="text/css">
+      body{
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div style="max-width:100%;background-color: #eef5ff;padding: 0px 30px 30px 30px; margin: 0 auto; font-family:Poppins;
+    font-size: 14px;">
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background: #0087fa;
+      height: 345px;
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      left: 0;">
+        <tr><td></td></tr>
+      </table>
+      <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="    padding: 25px; top: 30px;position: relative;
+      background-color: #fff;">
+        <tbody>
+          <tr>
+            <td>
+              <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-radius: 6px 6px 0px 0px;
+                  padding: 6px 0px 17px 0px;">
+                <tbody>
+                  <tr>
+                    <td>
+                      <!-- <svg width="125" height="23" viewBox="0 0 125 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.934 13.074H4.818L3.806 16H0.572L6.094 0.621999H9.68L15.202 16H11.946L10.934 13.074ZM10.098 10.61L7.876 4.186L5.654 10.61H10.098ZM22.04 3.614C22.9494 3.614 23.7487 3.79733 24.438 4.164C25.1274 4.516 25.67 4.978 26.066 5.55V3.812H29.168V16.088C29.168 17.2173 28.9407 18.222 28.486 19.102C28.0314 19.9967 27.3494 20.7007 26.44 21.214C25.5307 21.742 24.4307 22.006 23.14 22.006C21.4094 22.006 19.9867 21.6027 18.872 20.796C17.772 19.9893 17.1487 18.8893 17.002 17.496H20.06C20.2214 18.0533 20.566 18.4933 21.094 18.816C21.6367 19.1533 22.2894 19.322 23.052 19.322C23.9467 19.322 24.6727 19.0507 25.23 18.508C25.7874 17.98 26.066 17.1733 26.066 16.088V14.196C25.67 14.768 25.12 15.2447 24.416 15.626C23.7267 16.0073 22.9347 16.198 22.04 16.198C21.0134 16.198 20.0747 15.934 19.224 15.406C18.3734 14.878 17.6987 14.1373 17.2 13.184C16.716 12.216 16.474 11.1087 16.474 9.862C16.474 8.63 16.716 7.53733 17.2 6.584C17.6987 5.63067 18.366 4.89733 19.202 4.384C20.0527 3.87067 20.9987 3.614 22.04 3.614ZM26.066 9.906C26.066 9.158 25.9194 8.52 25.626 7.992C25.3327 7.44933 24.9367 7.03867 24.438 6.76C23.9394 6.46667 23.404 6.32 22.832 6.32C22.26 6.32 21.732 6.45933 21.248 6.738C20.764 7.01667 20.368 7.42733 20.06 7.97C19.7667 8.498 19.62 9.12867 19.62 9.862C19.62 10.5953 19.7667 11.2407 20.06 11.798C20.368 12.3407 20.764 12.7587 21.248 13.052C21.7467 13.3453 22.2747 13.492 22.832 13.492C23.404 13.492 23.9394 13.3527 24.438 13.074C24.9367 12.7807 25.3327 12.37 25.626 11.842C25.9194 11.2993 26.066 10.654 26.066 9.906ZM43.5062 9.642C43.5062 10.082 43.4769 10.478 43.4182 10.83H34.5082C34.5815 11.71 34.8895 12.3993 35.4322 12.898C35.9749 13.3967 36.6422 13.646 37.4342 13.646C38.5782 13.646 39.3922 13.1547 39.8762 12.172H43.1982C42.8462 13.3453 42.1715 14.3133 41.1742 15.076C40.1769 15.824 38.9522 16.198 37.5002 16.198C36.3269 16.198 35.2709 15.9413 34.3322 15.428C33.4082 14.9 32.6822 14.1593 32.1542 13.206C31.6409 12.2527 31.3842 11.1527 31.3842 9.906C31.3842 8.64467 31.6409 7.53733 32.1542 6.584C32.6675 5.63067 33.3862 4.89733 34.3102 4.384C35.2342 3.87067 36.2975 3.614 37.5002 3.614C38.6589 3.614 39.6929 3.86333 40.6022 4.362C41.5262 4.86067 42.2375 5.572 42.7362 6.496C43.2495 7.40533 43.5062 8.454 43.5062 9.642ZM40.3162 8.762C40.3015 7.97 40.0155 7.33933 39.4582 6.87C38.9009 6.386 38.2189 6.144 37.4122 6.144C36.6495 6.144 36.0042 6.37867 35.4762 6.848C34.9629 7.30267 34.6475 7.94067 34.5302 8.762H40.3162ZM52.5083 3.636C53.9603 3.636 55.1337 4.098 56.0283 5.022C56.923 5.93133 57.3703 7.20733 57.3703 8.85V16H54.2903V9.268C54.2903 8.3 54.0483 7.55933 53.5643 7.046C53.0803 6.518 52.4203 6.254 51.5843 6.254C50.7337 6.254 50.059 6.518 49.5603 7.046C49.0763 7.55933 48.8343 8.3 48.8343 9.268V16H45.7543V3.812H48.8343V5.33C49.245 4.802 49.7657 4.39133 50.3963 4.098C51.0417 3.79 51.7457 3.636 52.5083 3.636ZM63.8853 6.342V12.238C63.8853 12.6487 63.9806 12.9493 64.1713 13.14C64.3766 13.316 64.7139 13.404 65.1833 13.404H66.6133V16H64.6773C62.0813 16 60.7833 14.7387 60.7833 12.216V6.342H59.3313V3.812H60.7833V0.797999H63.8853V3.812H66.6133V6.342H63.8853Z" fill="#0087FA"></path>
+                        <path d="M77.1507 13.558H82.2107V16H74.0707V0.644H77.1507V13.558ZM89.5804 16.198C88.4071 16.198 87.3511 15.9413 86.4124 15.428C85.4737 14.9 84.7331 14.1593 84.1904 13.206C83.6624 12.2527 83.3984 11.1527 83.3984 9.906C83.3984 8.65933 83.6697 7.55933 84.2124 6.606C84.7697 5.65267 85.5251 4.91933 86.4784 4.406C87.4317 3.878 88.4951 3.614 89.6684 3.614C90.8417 3.614 91.9051 3.878 92.8584 4.406C93.8117 4.91933 94.5597 5.65267 95.1024 6.606C95.6597 7.55933 95.9384 8.65933 95.9384 9.906C95.9384 11.1527 95.6524 12.2527 95.0804 13.206C94.5231 14.1593 93.7604 14.9 92.7924 15.428C91.8391 15.9413 90.7684 16.198 89.5804 16.198ZM89.5804 13.514C90.1377 13.514 90.6584 13.382 91.1424 13.118C91.6411 12.8393 92.0371 12.4287 92.3304 11.886C92.6237 11.3433 92.7704 10.6833 92.7704 9.906C92.7704 8.74733 92.4624 7.86 91.8464 7.244C91.2451 6.61333 90.5044 6.298 89.6244 6.298C88.7444 6.298 88.0037 6.61333 87.4024 7.244C86.8157 7.86 86.5224 8.74733 86.5224 9.906C86.5224 11.0647 86.8084 11.9593 87.3804 12.59C87.9671 13.206 88.7004 13.514 89.5804 13.514ZM102.972 3.614C103.881 3.614 104.68 3.79733 105.37 4.164C106.059 4.516 106.602 4.978 106.998 5.55V3.812H110.1V16.088C110.1 17.2173 109.872 18.222 109.418 19.102C108.963 19.9967 108.281 20.7007 107.372 21.214C106.462 21.742 105.362 22.006 104.072 22.006C102.341 22.006 100.918 21.6027 99.8037 20.796C98.7037 19.9893 98.0804 18.8893 97.9337 17.496H100.992C101.153 18.0533 101.498 18.4933 102.026 18.816C102.568 19.1533 103.221 19.322 103.984 19.322C104.878 19.322 105.604 19.0507 106.162 18.508C106.719 17.98 106.998 17.1733 106.998 16.088V14.196C106.602 14.768 106.052 15.2447 105.348 15.626C104.658 16.0073 103.866 16.198 102.972 16.198C101.945 16.198 101.006 15.934 100.156 15.406C99.305 14.878 98.6304 14.1373 98.1317 13.184C97.6477 12.216 97.4057 11.1087 97.4057 9.862C97.4057 8.63 97.6477 7.53733 98.1317 6.584C98.6304 5.63067 99.2977 4.89733 100.134 4.384C100.984 3.87067 101.93 3.614 102.972 3.614ZM106.998 9.906C106.998 9.158 106.851 8.52 106.558 7.992C106.264 7.44933 105.868 7.03867 105.37 6.76C104.871 6.46667 104.336 6.32 103.764 6.32C103.192 6.32 102.664 6.45933 102.18 6.738C101.696 7.01667 101.3 7.42733 100.992 7.97C100.698 8.498 100.552 9.12867 100.552 9.862C100.552 10.5953 100.698 11.2407 100.992 11.798C101.3 12.3407 101.696 12.7587 102.18 13.052C102.678 13.3453 103.206 13.492 103.764 13.492C104.336 13.492 104.871 13.3527 105.37 13.074C105.868 12.7807 106.264 12.37 106.558 11.842C106.851 11.2993 106.998 10.654 106.998 9.906ZM118.52 16.198C117.347 16.198 116.291 15.9413 115.352 15.428C114.413 14.9 113.673 14.1593 113.13 13.206C112.602 12.2527 112.338 11.1527 112.338 9.906C112.338 8.65933 112.609 7.55933 113.152 6.606C113.709 5.65267 114.465 4.91933 115.418 4.406C116.371 3.878 117.435 3.614 118.608 3.614C119.781 3.614 120.845 3.878 121.798 4.406C122.751 4.91933 123.499 5.65267 124.042 6.606C124.599 7.55933 124.878 8.65933 124.878 9.906C124.878 11.1527 124.592 12.2527 124.02 13.206C123.463 14.1593 122.7 14.9 121.732 15.428C120.779 15.9413 119.708 16.198 118.52 16.198ZM118.52 13.514C119.077 13.514 119.598 13.382 120.082 13.118C120.581 12.8393 120.977 12.4287 121.27 11.886C121.563 11.3433 121.71 10.6833 121.71 9.906C121.71 8.74733 121.402 7.86 120.786 7.244C120.185 6.61333 119.444 6.298 118.564 6.298C117.684 6.298 116.943 6.61333 116.342 7.244C115.755 7.86 115.462 8.74733 115.462 9.906C115.462 11.0647 115.748 11.9593 116.32 12.59C116.907 13.206 117.64 13.514 118.52 13.514Z" fill="#FFBE00"></path>
+                      </svg> -->
+                      <img src="img/logoarb.png"
+                    </td>
+                    <td style="float: right;font-size: 10px;">
+                      <span style="display: block; margin-bottom: 5px;"><span style="color: #5a5a5a;">Trip ID:</span> EMT70167431</span>
+                      <span style="display: block;"><span style="color: #5a5a5a;">Date:</span> Mon, 11 Nov 2023</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>  
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="    background-color: #d6f9e8;
+                          padding: 10px 30px 12px 16px;
+                          margin-bottom: 16px;
+                          border-radius: 4px;" >
+                            <tbody>
+                              <tr>
+                             <td>
+                              <span style="color: #037000;font-weight: 500; margin-bottom: 2px;font-size: 16px; display: block;">Congratulations!</span>
+                                <span style="display: block; font-size: 12px;color: #037000;">Your hotel booking is confirmed.</span>
+                              </td>
+                              <td style="text-align: right;"><img src="img/flightwindow.png"</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="    margin-bottom: 12px;">
+                          <tbody>
+                            <tr>
+                             <td>
+                              <span style="display: block; font-weight: 500;">Hello Neha Sawake</span>
+                              <span style="display: block; font-size: 10px; color: #474747;">Thank you for booking with us. Your booking is confirmed. Please see the details below.</span>
+                            </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                       </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style=" 
+                                      padding: 16px 50px;
+                                  background-color: #e0f3ff;
+                                  margin: 0px 0 35px 0;
+                                  border-radius: 0 0 6px 6px;">
+                                    <tbody>
+                                      <tr>
+                                        <td style="font-size: 10px;border-right: 2px solid #ffffff;
+                                        font-weight: 400;
+                                        color: #4c4c4c;">Musafir Booking Reference Number
+                                        </td>
+                                        <td style="font-size: 10px;    text-align: right;
+                                        font-weight: 400;
+                                        color: #4c4c4c;">Airline Record
+                                        </td>
+                                        
+                                      </tr>
+                                      <tr>
+                                        <td style="font-size: 12px;border-right: 2px solid #ffffff;
+                                        font-weight: 500;    padding-top: 2px;
+                                        ">MB 12345</td>
+                                         <td style="font-size: 12px;    text-align: right;
+                                         font-weight: 500;    padding-top: 2px;
+                                        ">57KV7V (Air India)/P1HGVC (IndiGo)</td>
+                                         
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                       </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" >
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <span style="font-style: italic;
+                                  font-weight: 400;
+                                  background: linear-gradient(90deg, #ffbe00 13.7%, rgba(255, 200, 32, 0) 91%);">One Way Flight</span>
+                                </td>
+                                <td style="text-align: right;">
+                                  <span style="font-style: italic;
+                                  font-weight: 500;
+                                  font-size: 12px;
+                                  background: linear-gradient(-90deg, #ffbe00 13.7%, rgba(255, 200, 32, 0) 91%); ">GDS PNR - IM22QM </span>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2" style="    padding-top: 12px;">
+                                   <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background: linear-gradient(90deg, #ebf0f7 0%, rgba(235, 240, 247, 0) 101.3%);
+                                   padding: 6px 0 6px 10px;
+                                   margin-bottom: 16px;">
+                                    <tbody>
+                                      <tr> <td style="font-size: 14px;font-weight: 500;">
+                                          <span>Delhi to Bengaluru (4hr 40m)</span>
+                                        </td>
+                                        <td style="text-align: right;"><span style="    font-size: 10px;
+                                          font-style: italic;">Monday 10 Dec 2023</span></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                             </tr>
+                             <tr>
+                              <td>
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                      <tr>
+                                        <td style="border-right: 1px dashed #ced8e6;border-right: 1px dashed #ced8e6; width: 22%; padding-right: 45px;">
+                                          <span style="display: block;    margin-bottom: 4px;">
+                                            <span><svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <path d="M19 0H0V13H19V0Z" fill="url(#pattern0)"></path>
+                                              <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                  <use xlink:href="#image0_1772_998" transform="scale(0.00108225 0.0015674)"></use>
+                                                </pattern>
+                                                <image id="image0_1772_998" width="924" height="638" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA5wAAAJ+AgMAAACiJ+d/AAAACVBMVEXtHCTtHCTtHCQDKAZeAAAAA3RSTlMA/a5qCtXBAAADi0lEQVR42u3csW3bUBQFUNuAC6vPCC6SKTSCCpsQUrH0GF6CvZsAiaZMVuCPIPHynrPBgz4v33uf9sMDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+1wWesrss7X97XmyDqX1XV+Rta5uswpssynkjpfVtd5FkPqFLdi6L51volbMXR330q6PnG7q7h9LIkhcavr66jTkC2GAus8iVtxK27Frbhd71ncittAdpp2mmJoR3Uexa2u794exa24DeQKyZAd6GCnacjW9Ylbcavru2edLUO2uN0yO01xG+hZ3NppiqH91GmnqetLrLNlyBa3G+azeHErhvZUpyFbDAXW2dL1iVtxK27F7VXZadppJrLTtNPU9e2ozpau77Mjhlri1k5T3N6fz+LFbSBXSHaa4taQLW51feJW3HZ3feLWTjORKyRXSOJ2R3Frp6nrS6wzM4Z8OGSnWRG3/tXHlrlCstPU9e2ozpaub+6IIXG7r7i10xS3iXF7FLcbZqdpp6nr21GdJV2fnaa4TYxbO01xK27F7VW5QrLTTOQKyU7TkC1u4+L2WNL1iVtxK25vxGfx/vbckL2jOu00DdnidrtxWxJDdpqGbHF7K3aaPosXt+I2Lm6Phmxxmxe3dpri1pAtbq/LTtNn8YFcIdlpiltDtq5vozEkbg3ZgV2f7lbcittbcYVkp2nIFrdxcXssGbLFra5P3N6InaadZiJDts/iDdniVte3zRgSt4ZscXsrdpp2moHc2Ntpiltxq+vbaAyJW0N2YAyJW3GbGEOZO01XSK6QKmJI3Or6EmNoLokhXd+uYsh3mmLIrk/c6vrEkG6o42pl/eMphsSQGBJDYugmj+dU8nieSx7P2ePp8cx7PN9KHs9TyeP51fF4ZsbQ0vF4DhzbU8mxjewS1r9VMi+yl47m9rD+5/woObbHjmM7lRzbc8mxnTuObWTTN3Bsp5Jj++HY7qm3jTy2vzreKgMjWeSxfe04tk9LR9q+lBzbpePYjvycc8fPmXhsR37OwJfnSNgm7uG/D5T5s+TnnDtCaOo4tYG90GGkzCnupXIYObV5T+dYmWlh+3R5HxL27vzxZ6zMtFZoGSszLoSWilM7WufvikYosMyhJUJgmQN1XgKnsX/vlctKkVUCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5/gKzIxBvEILpMQAAAABJRU5ErkJggg=="></image>
+                                              </defs>
+                                            </svg></span>
+                                             <span>
+                                              <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 4.42102H6.985" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                                <path d="M5.00903 6.30702L6.98503 4.42102" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                                <path d="M6.99904 2.61401L1.01404 2.73201" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                                <path d="M2.98004 0.692993L1.01404 2.61399" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                              </svg>
+                                             </span>
+                                             <span style="font-weight: 500;">
+                                              Air France I AF 1234
+                                             </span>
+                                          </span>
+                                          <span style=" margin-left: 34px; display:block;background-color: #f5f5f5; font-size: 10px; font-style: italic;">
+                                            Operated By KLM - 2369
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block;color: #727272; font-size: 10px;">
+                                            Business Class
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block;color: 727272; font-size: 10px;">
+                                            Airbus A320
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block; color: #000; font-size: 10px; font-weight: 600;">
+                                            SUPER SAVER
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block; color: #0087fa; font-weight: 500; font-size: 10px;">
+                                            Airline PNR - AM22RD
+                                          </span>
+                                        </td>
+                                        <td style="text-align: right;    width: 17%;
+                                        padding-left: 45px;
+                                        vertical-align: top;">
+                                          <span style="display: block; font-weight: 500; margin-bottom:5px;">
+                                            Delhi (DEL)
+                                          </span>
+                                          <span style="display: block;margin-right: 5px; font-size: 10px; font-style: italic;">
+                                            07 : 20
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            Delhi Indira Gandhi
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            International, Terminal 3
+                                          </span>
+                                        </td>
+                                        <td style="position: relative;
+                                        text-align: center;
+                                        width: 20%;
+                                        padding-left: 45px;
+                                        padding-right: 45px;
+                                        vertical-align: middle;">
+                                          <span style="display: block;color: #727272; font-size: 8px;    border-bottom: 1px dashed #0087fa;margin-bottom: 10px; padding-bottom: 10px;">
+                                            2H 20M
+                                          </span>
+                                          <span style="display: block;">
+                                            <span style="display: block;position: absolute; top: 42px; left:103px;"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.866937 6.50532C1.50877 6.71761 1.3645 6.7304 2.23291 5.92232C2.98906 5.19159 2.51558 5.29841 3.54448 5.38435C4.4809 5.47644 5.8758 5.34688 6.59217 5.42418C6.6157 5.99825 5.60772 8.41299 5.49019 9.25784C5.68656 9.26126 5.84465 9.26969 6.05564 9.26661C6.38421 9.267 6.32422 9.29699 6.54483 8.94919C7.04024 8.2032 8.62312 5.816 8.97071 5.40181C10.0321 5.46456 11.0971 5.38398 12.137 5.16225C12.3831 5.0242 12.7589 4.7617 12.5226 4.46953C11.935 3.76679 10.3371 3.99111 9.2408 4.01945C8.79842 4.03141 8.90329 3.99895 8.62849 3.62762C8.31723 3.23092 6.17162 0.312293 5.94767 0.214966C5.86491 0.193799 5.27389 0.216118 5.15702 0.216702C5.25115 0.533835 5.38083 0.876734 5.50928 1.19719L6.23243 3.09186C6.37371 3.40346 6.4898 3.72588 6.5796 4.05601C6.06958 4.03899 5.57177 4.05921 5.0448 4.05082C2.42712 4.02533 3.14633 4.54908 2.09239 3.60296C1.48802 3.0839 1.2984 2.68997 0.730369 3.08846C1.09194 3.57915 1.2982 4.16692 1.32254 4.77595C1.34689 5.38498 1.18819 5.98734 0.866937 6.50532Z" fill="#0087FA"></path>
+                                            </svg></span>
+                                          </span>
+                                          <span style="display: block;color: #727272; font-size: 8px;">
+                                            One Stop
+                                          </span>
+                                        </td>
+                                        <td style="    vertical-align: top;">
+                                          <span style="display: block; font-weight: 500; margin-bottom:5px;">
+                                            Mumbai (BOM)
+                                          </span>
+                                          <span style="display: block;margin-right: 5px; font-size: 10px; font-style: italic;">
+                                            07 : 20 <span style="color: #ff0000; font-size: 10px; font-style: italic;">+ 1Day</span> 
+                                             <span>(11 Dec)</span>
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            Mumbai Internatonal
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            Airport, Terminal 1
+                                          </span>
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td colspan="2">
+                                <table  role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td  style="        width:85%;
+                                      background: linear-gradient( 270deg, rgba(245, 245, 245, 0.2) 0%, #e3e3e3 47.7%, rgba(245, 245, 245, 0.2) 100% );
+                                      display: flex;
+                                      justify-content: center;
+                                      color: #000000;
+                                      align-items: center;
+                                      margin: 30px auto;">
+                                        <span style="font-size: 10px; font-style: italic;">2 Hrs 5 Mins Layover In Mumbai</span>
+                                      </td>
+                                      <td style="    width: 15%; text-align: right;">
+                                        <span style="    font-size: 10px;
+                                        font-style: italic;">Tuesday 11 Dec 2023</span>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                             </tr>
+                             <tr>
+                              <td>
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding-bottom: 25px;">
+                                  <tbody>
+                                      <tr>
+                                        <td style="border-right: 1px dashed #ced8e6;border-right: 1px dashed #ced8e6; width: 22%; padding-right: 45px;">
+                                          <span style="display: block;    margin-bottom: 4px;">
+                                            <span><svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                              <path d="M19 0H0V13H19V0Z" fill="url(#pattern0)"></path>
+                                              <defs>
+                                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                                  <use xlink:href="#image0_1772_998" transform="scale(0.00108225 0.0015674)"></use>
+                                                </pattern>
+                                                <image id="image0_1772_998" width="924" height="638" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA5wAAAJ+AgMAAACiJ+d/AAAACVBMVEXtHCTtHCTtHCQDKAZeAAAAA3RSTlMA/a5qCtXBAAADi0lEQVR42u3csW3bUBQFUNuAC6vPCC6SKTSCCpsQUrH0GF6CvZsAiaZMVuCPIPHynrPBgz4v33uf9sMDAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/+1wWesrss7X97XmyDqX1XV+Rta5uswpssynkjpfVtd5FkPqFLdi6L51volbMXR330q6PnG7q7h9LIkhcavr66jTkC2GAus8iVtxK27Frbhd71ncittAdpp2mmJoR3Uexa2u794exa24DeQKyZAd6GCnacjW9Ylbcavru2edLUO2uN0yO01xG+hZ3NppiqH91GmnqetLrLNlyBa3G+azeHErhvZUpyFbDAXW2dL1iVtxK27F7VXZadppJrLTtNPU9e2ozpau77Mjhlri1k5T3N6fz+LFbSBXSHaa4taQLW51feJW3HZ3feLWTjORKyRXSOJ2R3Frp6nrS6wzM4Z8OGSnWRG3/tXHlrlCstPU9e2ozpaub+6IIXG7r7i10xS3iXF7FLcbZqdpp6nr21GdJV2fnaa4TYxbO01xK27F7VW5QrLTTOQKyU7TkC1u4+L2WNL1iVtxK25vxGfx/vbckL2jOu00DdnidrtxWxJDdpqGbHF7K3aaPosXt+I2Lm6Phmxxmxe3dpri1pAtbq/LTtNn8YFcIdlpiltDtq5vozEkbg3ZgV2f7lbcittbcYVkp2nIFrdxcXssGbLFra5P3N6InaadZiJDts/iDdniVte3zRgSt4ZscXsrdpp2moHc2Ntpiltxq+vbaAyJW0N2YAyJW3GbGEOZO01XSK6QKmJI3Or6EmNoLokhXd+uYsh3mmLIrk/c6vrEkG6o42pl/eMphsSQGBJDYugmj+dU8nieSx7P2ePp8cx7PN9KHs9TyeP51fF4ZsbQ0vF4DhzbU8mxjewS1r9VMi+yl47m9rD+5/woObbHjmM7lRzbc8mxnTuObWTTN3Bsp5Jj++HY7qm3jTy2vzreKgMjWeSxfe04tk9LR9q+lBzbpePYjvycc8fPmXhsR37OwJfnSNgm7uG/D5T5s+TnnDtCaOo4tYG90GGkzCnupXIYObV5T+dYmWlh+3R5HxL27vzxZ6zMtFZoGSszLoSWilM7WufvikYosMyhJUJgmQN1XgKnsX/vlctKkVUCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5/gKzIxBvEILpMQAAAABJRU5ErkJggg=="></image>
+                                              </defs>
+                                            </svg></span>
+                                             <span>
+                                              <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1 4.42102H6.985" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                                <path d="M5.00903 6.30702L6.98503 4.42102" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                                <path d="M6.99904 2.61401L1.01404 2.73201" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                                <path d="M2.98004 0.692993L1.01404 2.61399" stroke="black" stroke-width="0.6" stroke-linecap="round"></path>
+                                              </svg>
+                                             </span>
+                                             <span style="font-weight: 500;">
+                                              Air France I AF 1234
+                                             </span>
+                                          </span>
+                                          <span style=" margin-left: 34px; display:block;background-color: #f5f5f5; font-size: 10px; font-style: italic;">
+                                            Operated By KLM - 2369
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block;color: #727272; font-size: 10px;">
+                                            Business Class
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block;color: 727272; font-size: 10px;">
+                                            Airbus A320
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block; color: #000; font-size: 10px; font-weight: 600;">
+                                            SUPER SAVER
+                                          </span>
+                                          <span style="    margin-left: 34px; display: block; color: #0087fa; font-weight: 500; font-size: 10px;">
+                                            Airline PNR - AM22RD
+                                          </span>
+                                        </td>
+                                        <td style="text-align: right;    width: 17%;
+                                        padding-left: 45px;
+                                        vertical-align: top;">
+                                          <span style="display: block; font-weight: 500; margin-bottom:5px;">
+                                            Delhi (DEL)
+                                          </span>
+                                          <span style="display: block;margin-right: 5px; font-size: 10px; font-style: italic;">
+                                            07 : 20
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            Delhi Indira Gandhi
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            International, Terminal 3
+                                          </span>
+                                        </td>
+                                        <td style="position: relative;
+                                        text-align: center;
+                                        width: 20%;
+                                        padding-left: 45px;
+                                        padding-right: 45px;
+                                        vertical-align: middle;">
+                                          <span style="display: block;color: #727272; font-size: 8px;    border-bottom: 1px dashed #0087fa;margin-bottom: 10px; padding-bottom: 10px;">
+                                            2H 20M
+                                          </span>
+                                          <span style="display: block;">
+                                            <span style="display: block;position: absolute; top: 42px; left:103px;"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.866937 6.50532C1.50877 6.71761 1.3645 6.7304 2.23291 5.92232C2.98906 5.19159 2.51558 5.29841 3.54448 5.38435C4.4809 5.47644 5.8758 5.34688 6.59217 5.42418C6.6157 5.99825 5.60772 8.41299 5.49019 9.25784C5.68656 9.26126 5.84465 9.26969 6.05564 9.26661C6.38421 9.267 6.32422 9.29699 6.54483 8.94919C7.04024 8.2032 8.62312 5.816 8.97071 5.40181C10.0321 5.46456 11.0971 5.38398 12.137 5.16225C12.3831 5.0242 12.7589 4.7617 12.5226 4.46953C11.935 3.76679 10.3371 3.99111 9.2408 4.01945C8.79842 4.03141 8.90329 3.99895 8.62849 3.62762C8.31723 3.23092 6.17162 0.312293 5.94767 0.214966C5.86491 0.193799 5.27389 0.216118 5.15702 0.216702C5.25115 0.533835 5.38083 0.876734 5.50928 1.19719L6.23243 3.09186C6.37371 3.40346 6.4898 3.72588 6.5796 4.05601C6.06958 4.03899 5.57177 4.05921 5.0448 4.05082C2.42712 4.02533 3.14633 4.54908 2.09239 3.60296C1.48802 3.0839 1.2984 2.68997 0.730369 3.08846C1.09194 3.57915 1.2982 4.16692 1.32254 4.77595C1.34689 5.38498 1.18819 5.98734 0.866937 6.50532Z" fill="#0087FA"></path>
+                                            </svg></span>
+                                          </span>
+                                          <span style="display: block;color: #727272; font-size: 8px;">
+                                            One Stop
+                                          </span>
+                                        </td>
+                                        <td style="    vertical-align: top;">
+                                          <span style="display: block; font-weight: 500; margin-bottom:5px;">
+                                            Mumbai (BOM)
+                                          </span>
+                                          <span style="display: block;margin-right: 5px; font-size: 10px; font-style: italic;">
+                                            07 : 20 <span style="color: #ff0000; font-size: 10px; font-style: italic;">+ 1Day</span> 
+                                             <span>(11 Dec)</span>
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            Mumbai Internatonal
+                                          </span>
+                                          <span style="display: block; font-size: 10px; color: #727272;">
+                                            Airport, Terminal 1
+                                          </span>
+                                        </td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                             </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td style="background: linear-gradient(90deg, #ebf0f7 0%, rgba(235, 240, 247, 0) 101.3%);
+                              padding: 6px 0 6px 10px;
+                              margin-bottom: 16px;font-size: 14px;font-weight: 500;">
+                                <span>Passenger Details</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="     padding-bottom: 13px;">
+                                  <tbody>
+                                    <tr>
+                                      <td style="display: flex; align-items: center; width: 75%;">
+                                        <span style="display: inline-block;
+                                        width: 4px;
+                                        background-color: #ebf0f7;
+                                        margin-right: 6px; height: 34px;"></span>
+                                        <p>
+                                        <span style="display: block; font-size: 10px;color: #727272;">Passenger</span>
+                                           <span style="font-size: 12px;  font-weight: 600; margin-right: 6px;">Ms. Snehanjali Deshmukh</span>
+                                           <span style="font-size: 10px; color: #727272;">(Adult)</span>
+                                          </P>
+                                        </td>
+                                        <td style="width: 15%;">
+                                            <span style="font-size: 10px; color: #727272; display: block;">Ticket No</span>
+                                            <span style="font-size: 12px;  font-weight: 600; margin-right: 6px; display: block; ">170 - 3254342134</span>
+                                        
+                                        </td>
+                                        <td style="width: 10%;">
+                                            <span style="font-size: 10px; color: #727272; display: block;">Frequent Flyer No.</span>
+                                            <span style="font-size: 12px;  font-weight: 600; margin-right: 6px; display: block; ">EK274814820</span>
+                                        
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="display: flex; align-items: center; width: 75%;">
+                                        <span style="display: inline-block;
+                                        width: 4px;
+                                        background-color: #ebf0f7;
+                                        margin-right: 6px; height: 34px;"></span>
+                                        <p>
+                                        <span style="display: block; font-size: 10px;color: #727272;">Passenger</span>
+                                           <span style="font-size: 12px;  font-weight: 600; margin-right: 6px;">Ms. Snehanjali Deshmukh</span>
+                                           <span style="font-size: 10px; color: #727272;">(Adult)</span>
+                                          </P>
+                                        </td>
+                                        <td style="width: 15%;">
+                                          <span style="font-size: 10px; color: #727272; display: block;">Ticket No</span>
+                                          <span style="font-size: 12px;  font-weight: 600; margin-right: 6px; display: block; ">170 - 3254342134</span>
+                                      
+                                      </td>
+                                      <td style="width: 10%;">
+                                          <span style="font-size: 10px; color: #727272; display: block;">Frequent Flyer No.</span>
+                                          <span style="font-size: 12px;  font-weight: 600; margin-right: 6px; display: block; ">EK274814820</span>
+                                      
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="display: flex; align-items: center; width: 75%;">
+                                        <span style="display: inline-block;
+                                        width: 4px;
+                                        background-color: #ebf0f7;
+                                        margin-right: 6px;    height: 34px;"></span>
+                                        <p>
+                                        <span style="display: block; font-size: 10px;color: #727272;">Passenger</span>
+                                           <span style="font-size: 12px;  font-weight: 600; margin-right: 6px;">Ms. Snehanjali Deshmukh</span>
+                                           <span style="font-size: 10px; color: #727272;">(Adult)</span>
+                                          </P>
+                                        </td>
+                                        <td style="width: 15%;">
+                                          <span style="font-size: 10px; color: #727272; display: block;">Ticket No</span>
+                                          <span style="font-size: 12px;  font-weight: 600; margin-right: 6px; display: block; ">170 - 3254342134</span>
+                                      
+                                      </td>
+                                      <td style="width: 10%;">
+                                          <span style="font-size: 10px; color: #727272; display: block;">Frequent Flyer No.</span>
+                                          <span style="font-size: 12px;  font-weight: 600; margin-right: 6px; display: block; ">EK274814820</span>
+                                      
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                       <td>
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td style="background: linear-gradient(90deg, #ebf0f7 0%, rgba(235, 240, 247, 0) 101.3%);
+                              padding: 6px 0 6px 10px;
+                              margin-bottom: 16px;font-size: 14px;font-weight: 500;">
+                                <span>Important Information</span>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="    padding-bottom: 20px;
+                              padding-top: 16px;">
+                                <ul style="margin: 0; padding-left: 28px; font-size: 10px; color: #676767;">
+                                  <li>
+                                    A Lorem Ipsum is simply dummy text when an unknown printer took a
+                                    galley.
+                                  </li>
+                                  <li>
+                                    A Lorem Ipsum is simply dummy text when an unknown printer took a
+                                    galley.
+                                  </li>
+                                  <li>
+                                    A Lorem Ipsum is simply dummy text when an unknown printer took a
+                                    galley.
+                                  </li>
+                                  <li>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
+                                    quis consequuntur earum tenetur! Quisquam voluptates maxime ipsam
+                                    dolor molestias repellendus.
+                                  </li>
+                                  <li>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque,
+                                    pariatur beatae!
+                                  </li>
+                                </ul>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                       </td>
+                      </tr>
+                     
+                       <tr>
+                        <td>
+                         <table  role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 16px 0;padding-top: 0;">
+                           <tbody>
+                             <tr>
+                               <td colspan="2" style="background: linear-gradient(90deg, #ebf0f7 0%, rgba(235, 240, 247, 0) 101.3%);
+                               padding: 6px 0 6px 10px;
+                               margin-bottom: 16px;font-size: 14px;font-weight: 500;">
+                                 <span>Customer Support (24X7)</span>
+                               </td>
+                             </tr>
+                             <tr>
+                              <td style="   padding: 17px 0;">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                  <tbody>
+                                    <tr>
+                                      <td style="    width: 20%;">
+                                       <span style="    display: flex;
+          align-items: center;
+          gap: 7px;"><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.24723 0.675049C5.89762 0.676235 4.57867 1.07752 3.45709 1.82818C2.33552 2.57885 1.46168 3.64518 0.946028 4.89239C0.430379 6.1396 0.296077 7.51169 0.560099 8.83521C0.82412 10.1587 1.47461 11.3743 2.42934 12.3282C3.38407 13.2821 4.60018 13.9315 5.92394 14.1943C7.2477 14.4572 8.61967 14.3217 9.86642 13.8049C11.1132 13.2882 12.1787 12.4134 12.9284 11.2912C13.6781 10.169 14.0782 8.84965 14.0782 7.50005C14.0782 6.60369 13.9017 5.71612 13.5586 4.888C13.2156 4.05989 12.7127 3.30746 12.0789 2.67369C11.445 2.03992 10.6925 1.53721 9.86435 1.19428C9.03618 0.851355 8.14858 0.674918 7.25223 0.675049" fill="#FFC640"></path>
+            <path d="M7.26602 0.250018C5.3432 0.245774 3.49745 1.00554 2.13481 2.36218C0.772168 3.71882 0.00426114 5.5612 1.76804e-05 7.48402C-0.00422578 9.40684 0.755541 11.2526 2.11218 12.6152C3.46882 13.9779 5.3112 14.7458 7.23402 14.75H7.24702C8.1991 14.7512 9.14209 14.5648 10.0222 14.2016C10.9022 13.8383 11.7021 13.3053 12.3762 12.6329C13.0502 11.9605 13.5853 11.1619 13.9507 10.2828C14.3161 9.40363 14.5048 8.4611 14.506 7.50902C14.5072 6.55693 14.3208 5.61394 13.9576 4.73388C13.5943 3.85381 13.0613 3.05392 12.3889 2.37986C11.7165 1.7058 10.9179 1.17077 10.0388 0.805336C9.15963 0.439897 8.2171 0.2512 7.26502 0.250018H7.26602ZM7.24902 13.903C5.76859 13.9019 4.33435 13.3875 3.1906 12.4475C2.04684 11.5076 1.26432 10.2002 0.976321 8.74807C0.688321 7.29592 0.912656 5.78884 1.61111 4.48353C2.30957 3.17823 3.43895 2.15543 4.80688 1.58936C6.17481 1.02329 7.69668 0.948957 9.11327 1.37902C10.5298 1.80909 11.7535 2.71696 12.5759 3.94799C13.3982 5.17901 13.7683 6.65706 13.6232 8.13036C13.4781 9.60366 12.8267 10.9811 11.78 12.028C11.1863 12.6246 10.4801 13.0975 9.70233 13.4194C8.92458 13.7412 8.09072 13.9056 7.24902 13.903Z" fill="#0087FA"></path>
+            <path d="M6.62349 7.06153C6.33349 6.93853 5.1555 6.65153 5.4755 6.21753C5.8995 5.64553 6.5355 5.82653 7.0945 6.01753C7.4335 6.13353 7.53649 6.19853 7.79949 5.93753C8.06249 5.67653 8.2995 5.43153 8.5505 5.18153C8.8835 4.85353 9.32149 4.50353 9.77149 4.88153C10.2945 5.31853 9.91149 5.85153 9.54949 6.21353C9.30449 6.45953 9.04949 6.69953 8.81049 6.95053C8.55449 7.21753 8.62049 7.29653 8.73649 7.64553C8.93649 8.25853 9.1015 8.67153 8.6205 9.19453C8.3995 9.43453 8.2845 9.41553 8.1205 9.13153C7.96396 8.81035 7.82509 8.48086 7.7045 8.14453C7.4225 8.42653 7.0605 8.63353 7.0865 9.05253C7.1145 9.50953 7.17449 9.71653 6.83149 10.0525C5.96149 10.8995 6.2845 9.16053 5.9555 8.81553C5.6435 8.48853 3.90149 8.80853 4.67449 7.97253C4.76702 7.84267 4.89668 7.74384 5.04643 7.68904C5.19618 7.63425 5.359 7.62605 5.51349 7.66553C5.99249 7.71753 6.1075 7.52953 6.4335 7.21853C6.4835 7.17053 6.53949 7.12853 6.61749 7.06353L6.62349 7.06153ZM6.59549 9.61153H6.6485C6.6965 9.28553 6.5225 8.88553 6.6485 8.58353C6.7675 8.30953 7.15849 8.04753 7.36849 7.83753C7.57849 7.62753 7.7525 7.37953 7.9825 7.65753C8.16816 7.9709 8.31237 8.30704 8.4115 8.65753C8.8335 8.33353 7.8695 7.34853 8.2465 6.86753C8.4465 6.61453 9.9165 5.54953 9.4615 5.22153C9.0695 4.93853 8.14549 6.29453 7.86149 6.52153C7.40049 6.88253 6.39249 5.93753 6.10349 6.34453C6.42147 6.45932 6.73235 6.59289 7.03449 6.74453C7.39749 6.97753 7.09249 7.19953 6.87349 7.41953C6.65449 7.63953 6.3735 8.03753 6.0645 8.11953C5.7555 8.20153 5.4505 8.05653 5.1485 8.12853L5.15849 8.17253C5.44949 8.22453 6.1115 8.21653 6.3275 8.43353C6.5435 8.65053 6.5385 9.31453 6.5945 9.61053L6.59549 9.61153Z" fill="#0087FA"></path>
+            <path d="M6.59639 9.61146C6.54139 9.31146 6.54639 8.65146 6.32939 8.43446C6.11239 8.21746 5.45139 8.22646 5.16039 8.17346C5.16039 8.15846 5.15339 8.14346 5.15039 8.12946C5.45039 8.05746 5.76939 8.20146 6.06639 8.12046C6.36339 8.03946 6.66139 7.63646 6.87539 7.42046C7.08939 7.20446 7.39939 6.97646 7.03639 6.74546C6.73429 6.59373 6.4234 6.46016 6.10539 6.34546C6.39439 5.93946 7.40539 6.88446 7.86239 6.52346C8.14939 6.29946 9.07339 4.94446 9.46239 5.22346C9.91739 5.55046 8.44539 6.61646 8.24739 6.86946C7.87039 7.35146 8.83439 8.33546 8.41239 8.65946C8.31301 8.30906 8.16882 7.97295 7.98339 7.65946C7.75339 7.38246 7.56739 7.64046 7.36939 7.83946C7.17139 8.03846 6.76939 8.31246 6.64939 8.58546C6.51839 8.88546 6.69239 9.28546 6.64939 9.61346H6.59639V9.61146Z" fill="#0087FA"></path>
+          </svg><span style="font-weight: 600; font-size:10px">Airline Support
+      </span></span>
+      
+      <span style="display:block; font-weight: normal; font-size: 10px; color: #595959;   padding-left:21px;">0124-6173838 | 0124-4973838
+      </span>
+      <span style="display:block; font-weight: normal; font-size: 10px; color: #595959;   padding-left:21px;">airline@gmail.com
+      </span>
+                                      </td>
+                                      <td>
+                                       <span style="    display: flex;
+          align-items: center;
+          gap: 7px;"> <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.24674 0.675049C5.89714 0.676235 4.57818 1.07752 3.45661 1.82818C2.33503 2.57885 1.46119 3.64518 0.945539 4.89239C0.429891 6.1396 0.295589 7.51169 0.55961 8.83521C0.823632 10.1587 1.47412 11.3743 2.42885 12.3282C3.38359 13.2821 4.5997 13.9315 5.92345 14.1943C7.24721 14.4572 8.61918 14.3217 9.86594 13.8049C11.1127 13.2882 12.1783 12.4134 12.9279 11.2912C13.6776 10.169 14.0777 8.84965 14.0777 7.50005C14.0777 6.60369 13.9012 5.71612 13.5581 4.888C13.2151 4.05989 12.7123 3.30746 12.0784 2.67369C11.4445 2.03992 10.692 1.53721 9.86386 1.19428C9.0357 0.851355 8.14809 0.674918 7.25174 0.675049" fill="#FFBE00"></path>
+            <path d="M7.26602 0.250018C5.3432 0.245774 3.49745 1.00554 2.13481 2.36218C0.772168 3.71882 0.00426114 5.5612 1.76804e-05 7.48402C-0.00422578 9.40684 0.755541 11.2526 2.11218 12.6152C3.46882 13.9779 5.3112 14.7458 7.23402 14.75H7.24702C8.1991 14.7512 9.14209 14.5648 10.0222 14.2016C10.9022 13.8383 11.7021 13.3053 12.3762 12.6329C13.0502 11.9605 13.5853 11.1619 13.9507 10.2828C14.3161 9.40363 14.5048 8.4611 14.506 7.50902C14.5072 6.55693 14.3208 5.61394 13.9576 4.73388C13.5943 3.85381 13.0613 3.05392 12.3889 2.37986C11.7165 1.7058 10.9179 1.17077 10.0388 0.805336C9.15963 0.439897 8.2171 0.2512 7.26502 0.250018H7.26602ZM7.24902 13.903C5.76859 13.9019 4.33435 13.3875 3.1906 12.4475C2.04684 11.5076 1.26432 10.2002 0.976321 8.74807C0.688321 7.29592 0.912656 5.78884 1.61111 4.48353C2.30957 3.17823 3.43895 2.15543 4.80688 1.58936C6.17481 1.02329 7.69668 0.948957 9.11327 1.37902C10.5298 1.80909 11.7535 2.71696 12.5759 3.94799C13.3982 5.17901 13.7683 6.65706 13.6232 8.13036C13.4781 9.60366 12.8267 10.9811 11.78 12.028C11.1863 12.6246 10.4801 13.0975 9.70233 13.4194C8.92458 13.7412 8.09072 13.9056 7.24902 13.903Z" fill="#0087FA"></path>
+            <path d="M8.91826 5.42444C9.40138 5.42444 9.78818 5.5689 10.0792 5.85835C10.3697 6.1478 10.5152 6.53408 10.5152 7.01719V9.80124H9.42179V7.34485C9.42179 7.08262 9.34589 6.87325 9.19463 6.71623C9.04336 6.5592 8.8408 6.48069 8.58642 6.48069C8.31895 6.48069 8.10174 6.5613 7.93529 6.72251C7.76884 6.88372 7.68562 7.09623 7.68562 7.36107V9.80124H6.59639V7.34485C6.59639 7.08576 6.51945 6.87692 6.36504 6.71832C6.21064 6.56025 6.00546 6.48069 5.74899 6.48069C5.49251 6.48069 5.26849 6.56182 5.10204 6.7246C4.9356 6.88686 4.85238 7.09937 4.85238 7.36107V9.80124H3.76367V5.5265H4.85238V5.96879C5.17428 5.60606 5.59615 5.42444 6.11747 5.42444C6.41477 5.42444 6.67909 5.48515 6.90992 5.60659C7.14075 5.72802 7.32394 5.89918 7.46055 6.12058C7.81281 5.65631 8.29854 5.42444 8.91826 5.42444Z" fill="#0089FC"></path>
+            <path d="M10.7419 6.43818C10.7282 6.31936 10.6691 5.9425 10.353 5.61694C10.019 5.27306 9.61756 5.21234 9.50293 5.19873H10.7424L10.7419 6.43818Z" fill="white"></path>
+          </svg><span style="font-weight: 600; font-size:10px">Musafir Support</span>
+          </span>
+          <span style="display:block; font-weight: normal; font-size: 10px; color: #595959;   padding-left:21px;">0124-6173838 | 0124-4973838
+          </span>
+          <span style="display:block; font-weight: normal; font-size: 10px; color: #595959;   padding-left:21px;">airline@gmail.com
+          </span>
+            
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                             </tr>
+                           </tbody>
+                         </table>
+                        </td>
+                       </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+
