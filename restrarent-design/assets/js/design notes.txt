@@ -1,0 +1,10 @@
+display block, inline, inline-block
+difference bitween html and html5
+what is css 3
+position absolute and relatrive
+what is flex
+what is pesudo class
+what is bootstrap
+
+
+
