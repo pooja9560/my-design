@@ -1,0 +1,176 @@
+/* b2b css */
+@media screen and (max-width:767px) {
+    header .signin button {
+        padding: 5px 0px;
+        width: 100%;
+        font-size: 13px;
+    }
+    header  nav.row.navbar > div:first-child {
+        display: flex;
+    }
+    header .signin img {
+        width: 12%;
+        margin-right: 13px;
+    }
+    .search-control-tab {
+       display: none;
+    }
+    .searchcontrol-form {
+        flex-direction: column;
+    }
+    .banner-img {
+        margin: 17px 19px !important;
+        padding: 32px 0px 15px 0px !important;
+    }
+    .banner-img .banner-heading {
+        padding-bottom: 30px;
+    }
+    .banner-img .banner-heading h1 {
+        font-size: 27px;
+    }
+    .banner-img form.searchcontroller::before {
+        width: 97%;
+        top: 0px;
+        left: 6px;
+    }
+    .banner-img .searchcontrol-form .form-group {
+        margin-bottom: 10px;
+    }
+    .banner-img form.searchcontroller {
+        padding: 30px 9px 30px 9px;
+    }
+    .banner-img .searchcontrol-form .form-group {
+        margin-bottom: 10px;
+    }
+    .banner-img .form-group-input span {
+        font-size: 10px;
+    }
+    .banner-img .searchcontrol-form .form-group input::placeholder {
+        font-size: 12px;
+    }
+    .banner-img  .form-group-input b {
+        font-size: 12px;
+    }
+    .banner-img .searchcontrol-form .form-group {
+        padding: 7px 15px 7px 18px;
+    }
+    .banner-img  .searchcontrol-form img {
+        margin-right: 13px;
+    }
+    .banner-img .pax-details label {
+        font-size: 12px;
+    }
+    .banner-img .pax-details select {
+        font-size: 12px;
+    }
+    .banner-img .search-btn {
+        height: 49px;
+        margin-left: 9px;
+        width: 100%;
+        margin-top: 11px;
+    }
+    .banner-img  .search-btn button {
+        width: 100%;
+    }
+    .banner-img .search-btn img {
+        width: 10%;
+        margin: 0px 4px;
+    }
+    .banner-img .flt-way {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+    .banner-img .flt-way span {
+        color: #fff;
+        background-color: #b81111;
+        margin-right: 3px;
+        border-radius: 25px;
+        padding: 4px 8px;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+   
+    .banner-img .flt-way span label {
+        margin: 0;
+        font-size: 7px;
+    }
+    .destinationbg-img .destination-heading h2 {
+        font-size: 30px;
+    }
+    .destinationbg-img {
+        padding: 10px !important;
+    }
+    .destinationbg-img .destination-sec {
+        padding: 0 0px;
+        margin-bottom: 0;
+        margin-top: 21px;
+    }
+    .destinationbg-img .destination-img {
+        margin-bottom: 10px;
+    }
+    .Deals-heading h2 {
+        font-size: 30px !important;
+    }
+    .promotional-deal .deal-details {
+        font-size: 10px;
+        margin: 3px 9px ;
+        padding: 3px 0px ;
+        width: 80% ;
+    }
+    .promotional-deal  .deal-img {
+        left: 35px;
+        top: 43px;
+    }
+    .promotional-deal .deal-img1 {
+        left: 63px;
+    }
+    .promotional-deal .deal-img1 {
+        left: 63px ;
+    }
+  .ace-travel-img {
+        margin: 55px 0px 35px 29px !important;
+    }
+    .ace-travel-img-dtls {
+        top: 22% !important;
+        left: 25% !important;
+        font-size: 7px !important;
+        width: 58% !important;
+    }
+    .faq-pading .faq-img {
+        margin-bottom: 0;
+    }
+    .faq-pading:last-child {
+        margin-bottom: 39px;
+    }
+.faq-details {
+        margin-top: 22px !important;
+    }
+    .faq-details > ul > li {
+        margin-bottom: 16px !important;
+        font-size: 12px !important;
+        display: flex;
+        align-items: center;
+    }
+        footer .footer-cpyright {
+            flex-direction: column;
+        }
+        footer .footer-cpyright-img {
+            gap: 16px;
+            flex-direction: column;
+        }
+        footer .footer-right {
+            align-items: normal !important;
+            gap: 12px !important;
+            margin-top: 8px !important;
+            flex-direction: column !important;
+        }
+        footer .urgent-input {
+            flex-direction: column;
+        }
+        footer .urgent-btn > button {
+            width: 100%;
+        }
+    
+}
