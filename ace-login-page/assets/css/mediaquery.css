@@ -1,0 +1,42 @@
+@media screen and (max-width:767px) {
+    .navbar-toggler {
+        padding: 0 5px;
+        background-color: #59b6bc;
+        border: 1px solid #59b6bc;
+    }
+    .globe {
+        width: 200px;
+        height: 200px;
+    }
+    .moon {
+        left: 0;
+        width: 200px;
+        height: 200px;}
+        .banner-contain {
+            margin: 0px auto;
+            width: 100%;
+        }
+        .lognin-bg .lognin-form {
+            margin-top: 9px;
+        }
+        footer .footer-cpyright {
+            flex-direction: column;
+        }
+        footer .footer-cpyright-img {
+            gap: 16px;
+            flex-direction: column;
+        }
+        footer .footer-right {
+            align-items: normal;
+            gap: 12px;
+            margin-top: 8px;
+            flex-direction: column;
+        }
+        footer .urgent-input {
+            flex-direction: column;
+        }
+        footer .urgent-btn > button {
+            width: 100%;
+        }
+    
+}

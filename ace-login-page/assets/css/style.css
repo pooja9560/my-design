@@ -1,0 +1,491 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Playball&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: "Poppins", "sans-serif";
+    font-size: 14px;
+}
+input:focus {
+        outline: none;
+}
+li{
+    list-style: none;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom:0;
+}
+/* start header */
+section.banner-sec {
+    background-image:linear-gradient(318deg, #040404 19%,  #202d38 58%, #000000 100%);
+    /* background-image:linear-gradient(318deg, #081623 10%, #233240 55%, #081623 100%); */
+    position:relative;
+}
+header {
+    /* background: linear-gradient(0.25turn, #080b0d, #146896 , #051218); */
+    background-image: linear-gradient(100deg, #080b0d 10%, #06537c 55%, #080b0d 100%);
+    border-radius: 0 0 30px 30px;
+    position: relative;
+    z-index: 9;
+}
+.navbar-brand img {
+  width: 59%;
+}
+div#navbarSupportedContent {
+    display: flex;
+    justify-content: end;
+}
+div#navbarSupportedContent .navbar-nav .nav-item > a {
+  color: #fff;
+  font-size: 13px;
+}
+div#navbarSupportedContent .navbar-nav .nav-item {
+    margin: 0 7px;
+}
+.signin button {
+    background-image: linear-gradient(47deg, #3e4143, #000000);
+    border: 1px solid #313538;
+    box-shadow: none;
+    border-radius: 25px;
+    color: #fff;
+    padding: 4px 14px;
+    width: 72%;
+}
+.signin img {
+    width:13%;
+    margin-right: 10px;
+}
+/* end header */    
+/* start banner */
+/* .banner-left {
+    height: 580px;
+} */
+.banner-contain {
+  position: absolute;
+  color: #fff;
+  margin: 177px auto;
+  width: 71%;
+  top: 0;
+  text-align: center;
+}
+.banner-contain > h3 {
+  letter-spacing: 1.5px;
+  animation: opacityy 0s ease-out;
+  transition: .0s easeout;
+}
+@keyframes opacityy{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.banner-contain p {
+  font-size: 12px;
+  margin-top: 17px;
+  margin-bottom:0;
+}
+.banner-globe {
+    position: relative;
+    animation: opacity 8s ease-out ;
+    transition: .3s easeout;
+}
+@keyframes opacity{
+    0%{
+        opacity: -0.5;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+  .moon {
+    position: absolute;
+    top: 15px;
+    left: 103px;
+    width: 530px;
+    height: 516px;
+    border-radius: 50%;
+    background: #2a435e14;
+    /* background: #eee; */
+    /* box-shadow: 0 0 3px 0 #eeeeee85, 0 0 6px 0 #eeeeee82, 0 0 12px 0 #eee9, 0 0 24px 0 #eeeeee9c; */
+    animation: pulse 9s ease-out infinite;}
+  .globe {
+    position: relative;
+    top: -5px;
+    left: 4%;
+    width: 570px;
+    height: 570px;
+    overflow: hidden;
+    /* border-radius: 50%; */
+    /* transform: rotate(23.4deg); */
+    clip-path: circle(50% at 50% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    animation: pulse 3s ease-out infinite;
+  }
+  @keyframes pulse{
+    0% {
+        box-shadow: 9px -5px 0 0px rgb(42 107 154 / 6%), 16px 11px 10px 0px rgb(187 220 247 / 13%);
+    }
+    50% {
+        transform: scale(01);
+    }
+    100% {
+        box-shadow: 0 0 20px 16px rgba(0,210,255,0), 2px 1px 5px 11px rgb(0 210 255 / 0%);
+    }
+}
+  .globe:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%;
+    box-shadow: inset 50px 0 100px 0 #000,
+                inset 0 0 400px 0 #000; */
+  }
+  .beacon {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+    /* Override anchor defaults */
+    color: #fff;
+    text-decoration: none;
+    transition-duration: 1s;
+  }
+  .beacon:before {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: -8px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 4px 0 #fff;
+    animation: signal 2s infinite ease-out;
+  }
+  /* Make the location easy to click by expanding the clickable area from 4px to 20px and space for the text on :hover. */
+  .beacon:after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    top: -8px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    text-indent: 25px;
+    line-height: 20px;
+  }
+  .beacon:hover:after,
+  .beacon:focus:after {
+    content: attr(data-location);
+  }
+  
+  @keyframes signal {
+    0% { transform: scale(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: scale(1); opacity: 0; }
+  }
+  
+  [data-location=Hawaii] { top: 205px; left: 480px; }
+  [data-location=Tonga] { top: 310px; left: 460px; }
+  [data-location=Madagascar] { top: 290px; left: 160px; }
+  [data-location=Cyprus] { top: 174px; left: 122px; }
+  [data-location=Dominican-Republic] { top: 205px; left: 650px; }
+  
+  .surface {
+    position: relative;
+    width:942px;
+    height: 600px;
+    margin-left: -400px;
+    line-height: 0;
+    background-image: url(../img/globe2.jpg);
+    animation: axis 60s infinite linear;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-delay:2s;
+    transform: rotate3d(1, 1, 1, 355deg);
+  }
+  @keyframes axis {
+      0% { margin-left: -400px; }
+      50% { margin-left: 0px;}
+    100% { margin-left: -400px;}
+  }
+  .service-icon img {
+    width:60%;
+}
+ 
+  /* banner-right-side */
+  .lognin-bg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+.lognin-bg img {
+    width: 100%;
+}
+.lognin-bg .lognin-form {
+    position: absolute;
+    margin-top: 70px;
+}
+.lognin-bg .users-img img {
+    width: 22%;
+}
+.lognin-bg .users-img {
+    text-align: center;
+    margin-bottom: 19px;
+}
+.lognin-bg .input-box {
+    margin-bottom:9px;
+    color: #fff;
+}
+.lognin-bg .input-box input {
+    position: relative;
+    border-radius: 7px;
+    border: 1px solid #cdd6df;
+    padding: 6px 3px 6px 35px;
+    font-size: 14px;
+    background-color: #cdd6df;
+    width: 100%;
+}
+.lognin-bg .input-box input::placeholder {
+    font-size: 11px;
+    font-weight: 500;
+}
+.lognin-bg .input-box i {
+    position: absolute;
+    z-index: 9;
+    color: gray;
+    margin: 12px 8px;
+    font-size: 12px;
+}
+.lognin-bg .input-box i::after {
+    content: "";
+    display: block;
+    border: 1px solid gray;
+    transform: rotate(177deg);
+    margin-top: -11px;
+    margin-left: 18px;
+    height: 10px;
+}
+.lognin-bg .remember {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom:16px
+}
+.lognin-bg .remember input[type="checkbox"] {
+    margin-right: 22px;
+    border: 1px solid #fff;
+    width: auto;
+}
+.lognin-bg .remember input[type="checkbox"]::after {
+    content: "";
+    display: block;
+    border: 1px solid gray;
+    transform: rotate(177deg);
+    margin-top: 2px;
+    margin-left: 22px;
+    height: 10px;
+}
+.lognin-bg .remember label {
+    color: #bdbdbd;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.lognin-bg .forgot-pass {
+    text-align: center;
+    /* color: #fff; */
+}
+.lognin-bg .forgot-pass a {
+    color: #fff;
+    text-decoration: underline;
+}
+.lognin-bg .forgot-pass button {
+    background-image: linear-gradient(47deg, #3e4143, #000000);
+    border: 1px solid #313538;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 31px;
+    margin-top:18px;
+}
+.corner-left-img {
+    position: absolute;
+    left: -121px;
+    bottom: 0;
+}
+.corner-left-img img {
+    width:41%;
+}
+.banner-bottom {
+    position: absolute;
+    bottom: 0px;
+    left: 71px;
+    color: #b8c1ca;
+    z-index: 999;
+    font-size: 10px;
+    font-weight: normal;
+    width: 100%;
+    letter-spacing: 0.6px;
+    display: flex;
+    justify-content: flex-end;
+}
+.banner-bottom-icons {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+    margin-top: 19px;
+    margin-left: 57px;
+}
+.banner-bottom-icons img {
+    width: 21px;
+}
+/* end banner */
+/* about us */
+.sec-padding {
+    padding:16px 0;
+    text-align: center;
+}
+.about-us {
+    margin-top: 34px;
+}
+.heading-center {
+    text-align: center;
+}
+.heading-center h2 {
+    font-family: "Playball", cursive;
+    color: #686662;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 43px;
+}
+.sec-padding p {
+    color: #323232;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: .1px;
+    line-height: 1.8;
+}
+.why-chhose-img img {
+    width: 100%;
+}
+/* end about us */
+/* footer */
+footer {
+    padding: 63px 0;
+    background-image:linear-gradient(45deg, #131216, #363a3df5);
+}
+/* .footer-left {
+    width: 64%;
+    margin: 0 auto;
+} */
+footer .footer-detls {
+    color: #f5f5f5;
+    font-size: 13px;
+    display: flex;
+    gap: 79px;
+    margin-bottom: 26px;
+}
+
+footer .footer-detls > p > span {
+    display: flex;
+    font-size: 12px;
+}
+footer .footer-detls > span:last-child {
+    font-size: 12px;
+}
+/* footer .footer-detls:first-child > span:first-child {
+    flex: 0.3;
+} */
+footer .footer-detls:nth-child(2) > span:first-child {
+    flex: 0.2;
+}
+footer .footer-detls > span > b {
+    font-weight: 600;
+}
+footer  .footer-right {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    margin-top: 44px;
+}
+footer .urgent-input > p > b {
+    font-weight: 500;
+}
+footer .urgent-input > p {
+    color: #fff;
+    font-size: 31px;
+}
+footer .urgent-input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 2;
+}
+footer .urgent-input > input::placeholder {
+    text-align: center;
+    font-size: 13px;
+    color: #000;
+}
+footer .urgent-input > input {
+    padding: 11px 10px;
+    border-radius: 13px;
+    width: 100%;
+    box-shadow: inset 1px 1px 5px 1px #808080c2;
+}
+footer .urgent-btn > button {
+    padding:9px 55px;
+    border-radius: 11px;
+    color: #fff;
+    border: 3px solid #9eaac9;
+    background-image: linear-gradient(89deg, #2d77d0 25%, #293f93);
+}
+footer .footer-cpyright {
+    margin-top: 61px;
+    display: flex;
+}
+footer .footer-cpyright-img {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+footer .footer-cpyright-img > span {
+    color: #38618b;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+footer .footer-cpyright img {
+    width: 34px;
+}
+footer .pay-img {
+    text-align: center;
+}
+footer .pay-img img {
+    width:55%;
+}
+/* end footer */
