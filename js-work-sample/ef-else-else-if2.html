@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+const student_result=prompt("enter your marks ");
+let student_marks=500;
+let percantage=student_result*100/student_marks;
+ if(student_result>=300){
+document.write("Hey you are first divison pass. "  + " your percentage is " + percantage + "%");
+}
+else if(student_result<300 && student_result>200){
+document.write("Hey you are  second divison pass. "  + " your percentage is " + percantage + "%");
+}
+else if(student_result<280 && student_result >100){
+document.write("Hey you are  third divison pass. "  + " your percentage is " + percantage + "%");
+}
+else{
+    document.write("Sorry You are fail. bad luck!" + " your percentage is " + percantage + "%")
+    }
+</script>
+
+</body>
+</html>
